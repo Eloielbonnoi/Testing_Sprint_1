@@ -1,0 +1,19 @@
+{
+  "name": "testing_sprint_1",
+  "version": "1.0.0",
+  "description": "Testing Sprint 1",
+  "main": "__tests__",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eloielbonnoi/Testing_Sprint_1.git"
+  },
+  "author": "Eloi Isern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eloielbonnoi/Testing_Sprint_1/issues"
+  },
+  "homepage": "https://github.com/Eloielbonnoi/Testing_Sprint_1#readme"
+}
