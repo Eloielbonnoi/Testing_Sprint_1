@@ -1,5 +1,4 @@
-  
-  function mul(g, h) {
+function mul(g, h) {
     return g * h;
-  }
-  module.exports = mul;
+}
+module.exports = mul;
