@@ -5,3 +5,8 @@ function sum(a, b) {
     return a + b;
   }
   module.exports = sum;
+
+
+  /* "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, */
