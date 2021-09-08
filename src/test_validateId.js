@@ -1,6 +1,5 @@
 const validateId = require ('./validateId'); //Que serà en modul que crearem
 
-
 test('Retorna false si la id queda buida', () =>{
     expect(validateId('').toBe(false))
    // console.log(test);
