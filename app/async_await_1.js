@@ -1,6 +1,3 @@
-// https://www.youtube.com/watch?v=89Pl2Uok8xc&ab_channel=SamMeech-Ward
-
-// https://www.youtube.com/watch?v=hz0_q1MJa2k&ab_channel=SamMeech-Ward
 //NIVELL 1.1
 //Donats els objectes Employees i Salaries, crea una arrow function getEmpleado que retorni una Promise efectuant la cerca en l'objecte pel seu id. 
 //Crea una altra arrow function getSalario que rebi com a paràmetre un objecte Employee i retorni el seu salari.
@@ -27,27 +24,28 @@ let salaries = [{
     salary: 2000
 }];
 
+const validateId = require ('./validateId')
+
 const getEmpleado = (id) => {
     //Test que si no hi ha id et retorni l'error correcte
     //Test que la id és un número
     //Test que la id no conté lletres
-
     return new Promise(function (resolve, reject) {
         const r = employees.find(e => e.id === id);
 
         if (r) {
-            console.log(r);
+ //           console.log(r);
             resolve(r);
         } else {
             reject('Treballador desconegut!');
         }
     })
 };
-/*
+
 getEmpleado(1)               
     .then(r => console.log(r)) 
     .catch(err => console.error(err))
-*/
+
 
 const getSalaries = (objEmployee) => {
     return new Promise(function (resolve, reject) {
@@ -61,4 +59,7 @@ const getSalaries = (objEmployee) => {
     })
 };
 
+getSalaries({id: 3, name: 'Jeff Bezos'})
+.then(s => console.log(s)) 
+.catch(err => console.error(err))
 
