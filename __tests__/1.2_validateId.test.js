@@ -9,8 +9,8 @@ test('Retorna true si a la id hi ha un número', () =>{
     expect(validateId('654')).toBe(true)
     console.log(test);
 })
-test('Retorna false si a la id hi ha una lletra', () =>{
-    expect(validateId('32a')).toBe(false)
+test('Retorna false si a la id hi ha lletres', () =>{
+    expect(validateId('ada')).toBe(false)
    // console.log(test);
 })
 });

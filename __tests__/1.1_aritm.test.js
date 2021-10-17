@@ -1,5 +1,8 @@
 //Video interessant per assert i jest https://www.youtube.com/watch?v=_DzBez4qMi0&ab_channel=midudev
-
+/*
+Jest funciona amb expect, que reb la callback amb els paràmetres a testejar i després un mètode amb el que hauria de ser
+el resultat testejat.
+*/
 const {sum, res, div, mul} = require('../src/aritmetica.js');
 
 describe('proves aritmetiques', () => {
