@@ -1,7 +1,4 @@
-const sum = require('../src/sum.js'); //sintaxi que referencia les carpetes amb les funcions a testar
-const res = require('../src/res.js');
-const div = require('../src/div.js');
-const mul = require('../src/mul.js'); 
+const {sum, res, div, mul} = require('../src/aritmetica.js');
 
 describe('proves aritmetiques', () => {
     test(' 1 + 2 es igual a 3', () => {
@@ -24,4 +21,5 @@ describe('proves aritmetiques', () => {
         expect(mul(3, 3)).toBe(9);
     });
 });
+
 //executem el test amb el comando npm test
