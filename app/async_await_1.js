@@ -27,7 +27,6 @@ let salaries = [{
 const validateId = require ('./validateId')
 
 const getEmpleado = (id) => {
-    //Test que si no hi ha id et retorni l'error correcte
     //Test que la id és un número
     //Test que la id no conté lletres
     return new Promise(function (resolve, reject) {

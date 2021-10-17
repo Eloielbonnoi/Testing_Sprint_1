@@ -1,12 +1,14 @@
+//Video interessant per assert i jest https://www.youtube.com/watch?v=_DzBez4qMi0&ab_channel=midudev
+
 const {sum, res, div, mul} = require('../src/aritmetica.js');
 
 describe('proves aritmetiques', () => {
     test(' 1 + 2 es igual a 3', () => {
         expect(sum(1, 2)).toBe(3);
     });
-    it('hauria de resultar 3', () => {
-        expect(sum(1, 2)).toBe(3)
-    })
+    test('hauria de resultar 3.4', () => {
+        expect(sum(1.1, 2.3)).toBeCloseTo(3.4);
+    });
     test(' -1 + (-2) es igual a -3', () => { 
         expect(sum(-1, -2)).toBe(-3);
     });
