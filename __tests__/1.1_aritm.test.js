@@ -1,4 +1,5 @@
 //Video interessant per assert i jest https://www.youtube.com/watch?v=_DzBez4qMi0&ab_channel=midudev
+//Seguit de videos tutorials interessants https://www.youtube.com/watch?v=hlEpqK4ovgY&t=0s&ab_channel=LaboratoriaDevelopers
 /*
 Jest funciona amb expect, que reb la callback amb els paràmetres a testejar i després un mètode amb el que hauria de ser
 el resultat testejat.
