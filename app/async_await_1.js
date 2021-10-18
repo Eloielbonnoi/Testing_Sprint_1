@@ -24,11 +24,12 @@ let salaries = [{
     salary: 2000
 }];
 
-const validateId = require ('./validateId')
+const validateId = require ('../src/validateId');  //Assegurar que el path és el correcte ./ o ../?
 
 const getEmpleado = (id) => {
     //Test que la id és un número
     //Test que la id no conté lletres
+    //Test que la id no està buida
     return new Promise(function (resolve, reject) {
         const r = employees.find(e => e.id === id);
 
