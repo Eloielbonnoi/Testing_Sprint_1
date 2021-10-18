@@ -13,8 +13,8 @@ it('Hauria de retornar false si la id queda buida', () =>{
   expect(validateId('')).toBe(false)
   console.log(test);
 })
-// it('Hauria de retornar false si a la id hi ha lletres i números', () =>{
-//   expect(validateId('A3a')).toBe(false)
-//  // console.log(test);
-// })
+it('Hauria de retornar true si la id comença en 0', () =>{
+  expect(validateId('043')).toBe(true)
+  console.log(test);
+})
 });
