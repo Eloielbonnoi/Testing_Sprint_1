@@ -27,13 +27,14 @@ let salaries = [{
 const validateId = require ('../src/validateId');  //Assegurar que el path és el correcte ./ o ../?
 
 const getEmpleado = (id) => {
-    const idValidada = validateId(id)
+
+    const idValidada = validateId(id)    //Test
     if (idValidada){
         res.send({message: "Valid id"})
     }else {
         res.send({message:"Invalid id"})
     }
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve, reject) {  //getEmpleado
         const r = employees.find(e => e.id === id);
 
         if (r) {
@@ -52,7 +53,7 @@ getEmpleado(1)
 
 const getSalaries = (objEmployee) => {
 
-    //Confirmar que entra un objecte json
+    //objEmployee has an id?
 
     return new Promise(function (resolve, reject) {
         const s = salaries.find(v => v.id === objEmployee.id);
