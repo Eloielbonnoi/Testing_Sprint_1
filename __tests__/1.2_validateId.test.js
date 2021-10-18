@@ -2,7 +2,7 @@ const validateId = require ('../src/validateId'); //Que serà en modul que crear
 
 describe('validació id',() => {
 it('Hauria de retornar true si a la id hi ha un número', () =>{
-    expect(validateId('64')).toBe(true)
+    expect(validateId('643')).toBe(true)
     console.log(test);
 })
 it('Hauria de retornar false si a la id hi ha lletres', () =>{
